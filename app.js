@@ -2,16 +2,7 @@ var _ = require('lodash')
 var express = require('express')
 var app = express()
 var bodyParser = require('body-parser')
-var knex = require('knex')({
-    client: 'pg',
-    connection: {
-        host     : '127.0.0.1',
-        user     : 'developer',
-        password : 'password',
-        database : 'bookshelf',
-        charset  : 'utf8'
-  }
-})
+var knex = require('./db').Knex
 
 // application routing
 var router = express.Router()

@@ -1,17 +1,7 @@
-var knex = require('knex')({
-    client: 'pg',
-    connection: {
-        host     : '127.0.0.1',
-        user     : 'developer',
-        password : 'password',
-        database : 'bookshelf',
-        charset  : 'utf8'
-  }
-});
-
-var Schema = require('./schema');
-var sequence = require('when/sequence');
-var _ = require('lodash');
+var knex = require('./db').Knex
+var Schema = require('./schema')
+var sequence = require('when/sequence')
+var _ = require('lodash')
 
 function createTable(tableName) {
   return knex.schema.createTable(tableName, function (table) {
