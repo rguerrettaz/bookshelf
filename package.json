@@ -1,0 +1,15 @@
+{
+  "name": "bookshelf-test",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "bookshelf": "^0.7.9",
+    "express": "^4.12.3",
+    "knex": "^0.7.6",
+    "pg": "^4.3.0",
+    "postgresql": "0.0.1",
+    "swagger-node-express": "~2.0",
+    "when": "^3.7.2"
+  }
+}
